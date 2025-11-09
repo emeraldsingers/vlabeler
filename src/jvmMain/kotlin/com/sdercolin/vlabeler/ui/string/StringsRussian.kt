@@ -14,13 +14,13 @@ fun Strings.ru(): String = when (this) {
     MenuFileSaveAs -> "Сохранить как..."
     MenuFileProjectSetting -> "Настройки проекта..."
     MenuFileImportProject -> "Импортировать проект..."
-    MenuFileReloadLabelFile -> "Перезагрузить файл лейблом"
+    MenuFileReloadLabelFile -> "Перезагрузить файл меток"
     MenuFileReloadLabelFilePickFile -> "Из файла..."
     MenuFileReloadLabelFileDefault -> "Из выходного файла..."
     MenuFileReloadLabelFileDefaultWithoutConfirmation -> "Из выходного файла (без подтверждения)"
     MenuFileExport -> "Экспортировать файл лейбов..."
-    MenuFileExportOverwrite -> "Экспортировать файл лейблов с заменой"
-    MenuFileExportOverwriteAll -> "Экспортировать все файлы лейблов с заменой"
+    MenuFileExportOverwrite -> "Экспортировать файл меток с заменой"
+    MenuFileExportOverwriteAll -> "Экспортировать все файлы меток с заменой"
     MenuFileInvalidateCaches -> "Сбросить кэш"
     MenuFileClose -> "Закрыть"
     MenuEdit -> "Правка"
@@ -128,7 +128,7 @@ fun Strings.ru(): String = when (this) {
     StarterNewProjectNameWarning -> "Файл проекта уже существует. Создание проекта перезапишет файл."
     StarterNewCacheDirectory -> "Каталог кэша"
     StarterNewLabelerCategory -> "Категория"
-    StarterNewLabeler -> "Разметчик (Labeler)"
+    StarterNewLabeler -> "Разметчик"
     StarterNewTemplatePlugin -> "Генератор шаблонов"
     StarterNewTemplatePluginNone -> "Нет"
     StarterNewInputFile -> "Входной файл (.%s)"
@@ -138,11 +138,11 @@ fun Strings.ru(): String = when (this) {
         "Автоматически экспортировать проект с перезаписью указанного входного файла (если не указан, " +
             "используется расположение по умолчанию, определенное разметчиком) при сохранении проекта."
     StarterNewWarningSelfConstructedLabelerWithTemplatePlugin ->
-        "Вы пытаетесь использовать генератор шаблонов с разметчиком (labeler), который управляет несколькими подпроектами. " +
-            "Это опасно, так как может перезаписать все ваши существующие файлы лейблов к сгенерированными записями. " +
+        "Вы пытаетесь использовать генератор шаблонов с разметчиком, который управляет несколькими подпроектами. " +
+            "Это опасно, так как может перезаписать все ваши существующие файлы меток к сгенерированными записями. " +
             "Пожалуйста, дважды подтвердите, что настройки соответствуют вашим потребностям."
     StarterNewDirectoryPage -> "Настройки каталогов"
-    StarterNewLabelerPage -> "Настройки разметчика (Labeler)"
+    StarterNewLabelerPage -> "Настройки разметчика"
     StarterNewDataSourcePage -> "Настройки источника данных"
     StarterNewContentType -> "Создать с помощью..."
     StarterNewContentTypeDefault -> "По умолчанию"
@@ -267,13 +267,13 @@ fun Strings.ru(): String = when (this) {
             "Пожалуйста, свяжитесь с автором, приложив журнал ошибок, для получения дополнительной информации."
     FailedToCreateProjectException ->
         "Не удалось создать проект." +
-            "Пожалуйста, проверьте настройки разметчика (labeler)/плагина, чтобы убедиться, что вы настроили его правильно.\n" +
-            "Если проблема не исчезнет, пожалуйста, свяжитесь с автором разметчика (labeler)/плагина, приложив журнал ошибок, " +
+            "Пожалуйста, проверьте настройки разметчика/плагина, чтобы убедиться, что вы настроили его правильно.\n" +
+            "Если проблема не исчезнет, пожалуйста, свяжитесь с автором разметчика/плагина, приложив журнал ошибок, " +
             "для получения дополнительной информации."
     InvalidCreatedProjectException ->
         "Созданный проект недействителен. " +
-            "Пожалуйста, проверьте настройки разметчика (labeler)/плагина, чтобы убедиться, что вы настроили его правильно.\n" +
-            "Если проблема не исчезнет, пожалуйста, свяжитесь с автором разметчика (labeler)/плагина, приложив журнал ошибок, " +
+            "Пожалуйста, проверьте настройки разметчика/плагина, чтобы убедиться, что вы настроили его правильно.\n" +
+            "Если проблема не исчезнет, пожалуйста, свяжитесь с автором разметчика/плагина, приложив журнал ошибок, " +
             "для получения дополнительной информации."
     FailedToCreateProjectNoSampleException ->
         "Не удалось создать проект, потому что в каталоге сэмплов, заданном в настройках каталогов, не найден ни один файл сэмпла."
@@ -294,19 +294,19 @@ fun Strings.ru(): String = when (this) {
     CustomizableItemLoadingException -> "Не удалось загрузить выбранный настраиваемый элемент."
     CustomizableItemRemovingException -> "Не удалось удалить выбранный настраиваемый элемент."
     PluginRuntimeExceptionTemplate -> "Ошибка выполнения плагина: %s"
-    ProjectConstructorRuntimeExceptionTemplate -> "Ошибка выполнения разметчика (labeler) при создании проекта: %s"
-    QuickProjectBuilderRuntimeExceptionTemplate -> "Ошибка выполнения разметчика (labeler) при создании проекта для быстрого редактирования: %s"
-    PropertySetterRuntimeExceptionTemplate -> "Ошибка выполнения разметчика (labeler) при установке свойства: %s"
+    ProjectConstructorRuntimeExceptionTemplate -> "Ошибка выполнения разметчика при создании проекта: %s"
+    QuickProjectBuilderRuntimeExceptionTemplate -> "Ошибка выполнения разметчика при создании проекта для быстрого редактирования: %s"
+    PropertySetterRuntimeExceptionTemplate -> "Ошибка выполнения разметчика при установке свойства: %s"
     PropertySetterUnexpectedRuntimeException ->
         "Произошла непредвиденная ошибка при установке свойства.\n" +
-            "Пожалуйста, свяжитесь с автором разметчика (labeler), приложив журнал ошибок, для получения дополнительной информации."
+            "Пожалуйста, свяжитесь с автором разметчика, приложив журнал ошибок, для получения дополнительной информации."
     VideoComponentInitializationException ->
         "Не удалось инициализировать видеокомпонент. Для использования этой функции необходимо установить VLC на ваше устройство. " +
             "Подробности см. в разделе `Интеграция видео` в README."
     VideoFileNotFoundExceptionTemplate ->
         "Видео не найдено по имени \"%s\" с расширением из списка %s."
     LabelerManagerTitle -> "Разметчики (Labelers)"
-    LabelerManagerImportDialogTitle -> "Импортировать разметчик (labeler)"
+    LabelerManagerImportDialogTitle -> "Импортировать разметчик"
     TemplatePluginManagerTitle -> "Генераторы шаблонов"
     TemplatePluginManagerImportDialogTitle -> "Импортировать генератор шаблонов"
     MacroPluginManagerTitle -> "Плагины пакетного редактирования"
@@ -490,7 +490,7 @@ fun Strings.ru(): String = when (this) {
             "линий параметров.\n" +
             "Когда эта функция включена, другие линии параметров будут перемещаться соответственно, чтобы " +
             "сохранить относительное положение к перемещаемому параметру."
-    PreferencesEditorLockedDragUseLabeler -> "Использовать настройки, определенные разметчиком (labeler)"
+    PreferencesEditorLockedDragUseLabeler -> "Использовать настройки, определенные разметчиком"
     PreferencesEditorLockedDragUseStart -> "Фиксированное перетаскивание по началу записи"
     PreferencesEditorLockedDragNever -> "Никогда не использовать фиксированное перетаскивание"
     PreferencesEditorLockedSettingParameterWithCursor -> "Применить фиксированное перетаскивание при установке курсором"
@@ -506,14 +506,14 @@ fun Strings.ru(): String = when (this) {
     PreferencesEditorShowTag -> "Отображать теги"
     PreferencesEditorShowExtra -> "Отображать «Редактировать дополнительную информацию»"
     PreferencesEditorShowExtraDescription ->
-        "Даже если включено, если разметчик (labeler) не определяет дополнительную информацию, кнопка не будет показана."
+        "Даже если включено, если разметчик не определяет дополнительную информацию, кнопка не будет показана."
     PreferencesEditorPostEditAction -> "Действия после редактирования"
     PreferencesEditorPostEditActionDescription -> "Определите действия, которые будут выполнены после редактирования записи."
     PreferencesEditorPostEditActionDone -> "Установить отредактированные записи как «Готово» после редактирования"
     PreferencesEditorPostEditActionNext -> "Перейти к следующей записи после редактирования"
     PreferencesEditorPostEditActionEnabled -> "Включено"
     PreferencesEditorPostEditActionTrigger -> "Параметр(ы) для запуска действия"
-    PreferencesEditorPostEditActionTriggerUseLabeler -> "Использовать настройки, определенные разметчиком (labeler)"
+    PreferencesEditorPostEditActionTriggerUseLabeler -> "Использовать настройки, определенные разметчиком"
     PreferencesEditorPostEditActionTriggerUseStart -> "Начало записи"
     PreferencesEditorPostEditActionTriggerUseEnd -> "Конец записи"
     PreferencesEditorPostEditActionTriggerUseAny -> "Любой параметр"
@@ -551,7 +551,7 @@ fun Strings.ru(): String = when (this) {
     PreferencesEditorAutoScrollOnSwitched -> "При переключении на другую запись"
     PreferencesEditorContinuousLabelNames -> "Имена меток (непрерывные)"
     PreferencesEditorContinuousLabelNamesDescription ->
-        "Настройка внешнего вида текста имен записей, отображаемого в редакторе, при использовании непрерывного разметчика (labeler)."
+        "Настройка внешнего вида текста имен записей, отображаемого в редакторе, при использовании непрерывного разметчика."
     PreferencesEditorContinuousLabelNamesColor -> "Цвет"
     PreferencesEditorContinuousLabelNamesBackgroundColor -> "Цвет фона"
     PreferencesEditorContinuousLabelNamesEditableBackgroundColor -> "Цвет фона (редактирование)"
@@ -703,10 +703,10 @@ fun Strings.ru(): String = when (this) {
     LicenseDialogTitle -> "vLabeler - Лицензии"
     LicenseDialogLicenses -> "Лицензии OSS, используемые в vLabeler"
     LoadProjectErrorLabelerNotFound ->
-        "Не удается найти необходимый разметчик (labeler) `%1\$s` (версия %2\$s) на этом устройстве. " +
+        "Не удается найти необходимый разметчик `%1\$s` (версия %2\$s) на этом устройстве. " +
             "Пожалуйста, установите его вручную перед открытием проекта."
-    LoadProjectWarningLabelerCreated -> "Новый разметчик (labeler) `%s` установлен из файла проекта."
-    LoadProjectWarningLabelerUpdated -> "Разметчик (labeler) `%s` обновлен до версии `%s` из файла проекта."
+    LoadProjectWarningLabelerCreated -> "Новый разметчик `%s` установлен из файла проекта."
+    LoadProjectWarningLabelerUpdated -> "Разметчик `%s` обновлен до версии `%s` из файла проекта."
     LoadProjectWarningCacheDirReset ->
         "Не удается найти или создать каталог кэша, определенный в файле проекта. " +
             "Вместо этого будет использоваться каталог кэша по умолчанию."
@@ -748,12 +748,12 @@ fun Strings.ru(): String = when (this) {
     ProjectSettingOutputFileLabel -> "Выходной файл"
     ProjectSettingOutputFileHelperText ->
         "Целевой файл для действия `Экспорт`.\nЕсли не задан, `Экспорт с заменой` отключен."
-    ProjectSettingOutputFileDisabledPlaceholder -> "Отключено текущим разметчиком (labeler)"
+    ProjectSettingOutputFileDisabledPlaceholder -> "Отключено текущим разметчиком"
     ProjectSettingOutputFileSelectorDialogTitle -> "Выбрать выходной файл"
     ProjectSettingAutoExportHelperText ->
         "Автоматически экспортировать все подпроекты в их выходные файлы при сохранении проекта.\n" +
             "Эта опция действует только при корректной установке `Выходного файла`,\n" +
-            "или если он зафиксирован разметчиком (labeler)."
+            "или если он зафиксирован разметчиком."
     ImportEntriesDialogTitle -> "Импортировать проект"
     ImportEntriesDialogItemSummaryTitle -> "%d записей"
     ImportEntriesDialogItemTargetLabel -> "Цель"
@@ -800,7 +800,7 @@ fun Strings.ru(): String = when (this) {
     ReloadLabelDialogModuleNameTemplate -> "Подпроект: %s"
     ReloadLabelDialogShowUnchanged -> "Показать без изменений"
     ReloadLabelDialogNotice ->
-        "Этот предварительный просмотр различий рассчитывается на основе настроек текущего разметчика (labeler), " +
+        "Этот предварительный просмотр различий рассчитывается на основе настроек текущего разметчика, " +
             "поэтому он может не показывать все мелкие различия. Пожалуйста, проверьте фактическое содержимое после перезагрузки, чтобы убедиться, что " +
             "все в порядке."
     ReloadLabelDialogNoDiff -> "Различий не найдено."
